@@ -26,10 +26,10 @@ export const metadata: Metadata = {
     siteName: "Morocco Trip Itinerary",
     images: [
       {
-        url: "/morocco_flag.svg",
-        width: 900,
-        height: 600,
-        alt: "Morocco Flag",
+        url: "/jan-11/chefchaouen.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Morocco Trip - Chefchaouen Blue City",
       },
     ],
   },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Morocco Trip Itinerary | Jan 2-14, 2026",
     description: "Complete travel itinerary for our Morocco adventure - Marrakesh, Atlas Mountains, and more.",
-    images: ["/morocco_flag.svg"],
+    images: ["/jan-11/chefchaouen.jpg"],
   },
   icons: {
     icon: "/morocco_flag.svg",
