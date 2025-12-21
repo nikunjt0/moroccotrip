@@ -15,28 +15,6 @@ export default function WholeTrip() {
           <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
             Complete Trip Map
           </h2>
-          <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4">
-            <span className="inline-block w-3 h-3 bg-blue-600 rounded mr-2"></span>
-            Flight route (Madrid → Marrakesh) • 
-            <span className="inline-block w-3 h-3 bg-amber-500 rounded mx-2"></span>
-            Day trip (Marrakesh → Imlil) • 
-            <span className="inline-block w-3 h-3 bg-purple-500 rounded mx-2"></span>
-            Bus route (Marrakesh → Essaouira) • 
-            <span className="inline-block w-3 h-3 bg-pink-500 rounded mx-2"></span>
-            Bus route (Essaouira → Marrakesh → Ouarzazate) • 
-            <span className="inline-block w-3 h-3 bg-red-600 rounded mx-2"></span>
-            Car route (Ouarzazate → Merzouga) • 
-            <span className="inline-block w-3 h-3 bg-cyan-500 rounded mx-2"></span>
-            Car route (Merzouga → Fez) • 
-            <span className="inline-block w-3 h-3 bg-teal-500 rounded mx-2"></span>
-            Bus route (Fez → Chefchaouen) • 
-            <span className="inline-block w-3 h-3 bg-purple-600 rounded mx-2"></span>
-            Bus route (Chefchaouen → Tangier) • 
-            <span className="inline-block w-3 h-3 bg-indigo-500 rounded mx-2"></span>
-            Return route (Tangier → Madrid via ferry/bus/train) • 
-            <span className="inline-block w-3 h-3 bg-green-500 rounded mx-2"></span>
-            Marrakesh city exploration
-          </p>
           <CombinedTripMap />
         </div>
 
