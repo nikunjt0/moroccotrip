@@ -1,5 +1,7 @@
 import MarrakeshMap from '../components/MarrakeshMapWrapper';
 import Image from 'next/image';
+import PhotoGallery from '../components/PhotoGallery';
+import UploadButton from '../components/UploadButton';
 
 export default function Jan3() {
   return (
@@ -46,6 +48,11 @@ export default function Jan3() {
               </ul>
             </div>
           </div>
+        </div>
+
+        <div className="mt-8 mb-8">
+          <UploadButton day="jan-3" />
+          <PhotoGallery day="jan-3" />
         </div>
 
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -1,6 +1,6 @@
 'use client';
 
-import { MapContainer, TileLayer, Marker, Popup, Polyline } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
@@ -13,21 +13,14 @@ L.Icon.Default.mergeOptions({
 });
 
 // Locations
-const merzouga = [31.0833, -4.0167]; // Merzouga
-const tangier = [35.7595, -5.8340]; // Tangier
+const seville = [37.3891, -5.9845]; // Seville, Spain
 
-// Route: Merzouga → Tangier (LONG DRIVE)
-const route = [
-  merzouga,
-  tangier,
-];
-
-export default function TangierMap() {
+export default function SevilleMap() {
   return (
     <div className="w-full h-[500px] rounded-lg overflow-hidden shadow-lg border border-zinc-200 dark:border-zinc-800">
       <MapContainer
-        center={[33.4, -4.9]} // Center between Merzouga and Tangier
-        zoom={6}
+        center={seville as [number, number]}
+        zoom={13}
         style={{ height: '100%', width: '100%' }}
         className="z-0"
       >
@@ -35,24 +28,12 @@ export default function TangierMap() {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={merzouga as [number, number]}>
+        <Marker position={seville as [number, number]}>
           <Popup>
-            <strong>Merzouga</strong><br />
-            Starting point - LONG DRIVE
+            <strong>Seville</strong><br />
+            Explore the beautiful Andalusian city
           </Popup>
         </Marker>
-        <Marker position={tangier as [number, number]}>
-          <Popup>
-            <strong>Tangier</strong><br />
-            Destination - Activities and exploration
-          </Popup>
-        </Marker>
-        <Polyline
-          positions={route as [number, number][]}
-          color="#a855f7"
-          weight={3}
-          opacity={0.7}
-        />
       </MapContainer>
     </div>
   );

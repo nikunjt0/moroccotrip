@@ -1,5 +1,7 @@
-import MerzougaLocationMap from '../components/MerzougaLocationMapWrapper';
+import TangierMap from '../components/TangierMapWrapper';
 import Image from 'next/image';
+import PhotoGallery from '../components/PhotoGallery';
+import UploadButton from '../components/UploadButton';
 
 export default function Jan8() {
   return (
@@ -9,11 +11,11 @@ export default function Jan8() {
           January 8
         </h1>
         <p className="text-zinc-600 dark:text-zinc-400 mb-8">
-          Day 7 of your Morocco trip - Merzouga Desert Experience
+          Day 7 of your Morocco trip - Tangier Activities
         </p>
         
         <div className="mb-8">
-          <MerzougaLocationMap />
+          <TangierMap />
         </div>
 
         <div className="bg-white dark:bg-zinc-900 rounded-lg shadow-lg p-6 border border-zinc-200 dark:border-zinc-800">
@@ -22,30 +24,33 @@ export default function Jan8() {
           </h2>
           <div className="space-y-4 text-zinc-700 dark:text-zinc-300">
             <div className="space-y-2">
-              <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Day Activities</h3>
+              <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Day</h3>
               <ul className="list-disc list-inside space-y-1 ml-4">
-                <li><strong>Erg Chebbi Dunes</strong> - Explore the sand dunes</li>
-                <li>Sand activities and <strong>sandboarding</strong></li>
-                <li>Visit the <strong>oasis</strong></li>
-                <li>Experience <strong>Berber tribes</strong> culture</li>
-                <li>Listen to <strong>Gnaoua music</strong></li>
+                <li>Explore <strong>Tangier</strong> - vibrant port city</li>
+                <li>Visit the <strong>Kasbah area</strong></li>
+                <li>Explore the medina and souks</li>
               </ul>
             </div>
             <div className="space-y-2 pt-4 border-t border-zinc-200 dark:border-zinc-800">
               <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Evening & Night</h3>
               <ul className="list-disc list-inside space-y-1 ml-4">
-                <li><strong>Camel ride</strong> into the dunes</li>
-                <li>Sleep in <strong>dunes camping</strong></li>
+                <li><strong>Kasbah area</strong> at sunset</li>
+                <li>Night out: Tangier can be fun</li>
               </ul>
             </div>
           </div>
         </div>
 
+        <div className="mt-8 mb-8">
+          <UploadButton day="jan-8" />
+          <PhotoGallery day="jan-8" />
+        </div>
+
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="relative w-full h-[400px] rounded-lg overflow-hidden shadow-lg border border-zinc-200 dark:border-zinc-800">
             <Image
-              src="/jan-8/merzouga.jpg"
-              alt="Merzouga, Morocco"
+              src="/jan-12/tangier.webp"
+              alt="Tangier, Morocco"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -53,8 +58,8 @@ export default function Jan8() {
           </div>
           <div className="relative w-full h-[400px] rounded-lg overflow-hidden shadow-lg border border-zinc-200 dark:border-zinc-800">
             <Image
-              src="/jan-8/merzouga-night.jpg"
-              alt="Merzouga at night, Morocco"
+              src="/jan-12/tangier-street.avif"
+              alt="Tangier streets, Morocco"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"

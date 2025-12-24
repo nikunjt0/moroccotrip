@@ -1,5 +1,7 @@
 import FlightMap from '../components/FlightMapWrapper';
 import Image from 'next/image';
+import PhotoGallery from '../components/PhotoGallery';
+import UploadButton from '../components/UploadButton';
 
 export default function Jan2() {
   return (
@@ -79,7 +81,7 @@ export default function Jan2() {
               <div>
                 <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-1">Check-out</p>
                 <p className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
-                  January 5, 2026
+                  January 4, 2026
                 </p>
               </div>
               <div>
@@ -90,7 +92,7 @@ export default function Jan2() {
               </div>
             </div>
             <a
-              href="https://www.hostelworld.com/pwa/s?q=Marrakech,%20Morocco&country=Morocco&city=Marrakech&type=city&id=427&from=2026-01-02&to=2026-01-05&guests=5&page=1"
+              href="https://www.hostelworld.com/pwa/s?q=Marrakech,%20Morocco&country=Morocco&city=Marrakech&type=city&id=427&from=2026-01-02&to=2026-01-04&guests=5&page=1"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-colors shadow-md hover:shadow-lg"
@@ -123,6 +125,11 @@ export default function Jan2() {
               </ul>
             </div>
           </div>
+        </div>
+
+        <div className="mt-8 mb-8">
+          <UploadButton day="jan-2" />
+          <PhotoGallery day="jan-2" />
         </div>
 
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">

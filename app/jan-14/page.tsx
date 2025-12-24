@@ -1,3 +1,6 @@
+import PhotoGallery from '../components/PhotoGallery';
+import UploadButton from '../components/UploadButton';
+
 export default function Jan14() {
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950">
@@ -28,6 +31,11 @@ export default function Jan14() {
               </ul>
             </div>
           </div>
+        </div>
+
+        <div className="mt-8 mb-8">
+          <UploadButton day="jan-14" />
+          <PhotoGallery day="jan-14" />
         </div>
       </div>
     </div>

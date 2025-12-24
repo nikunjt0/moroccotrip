@@ -1,5 +1,7 @@
-import MadridReturnMap from '../components/MadridReturnMapWrapper';
+import SevilleMap from '../components/SevilleMapWrapper';
 import Image from 'next/image';
+import PhotoGallery from '../components/PhotoGallery';
+import UploadButton from '../components/UploadButton';
 
 export default function Jan13() {
   return (
@@ -9,24 +11,27 @@ export default function Jan13() {
           January 13
         </h1>
         <p className="text-zinc-600 dark:text-zinc-400 mb-8">
-          Day 12 of your Morocco trip - Return to Madrid
+          Day 12 of your trip - Seville Activities then Bullet Train to Madrid
         </p>
         
         <div className="mb-8">
-          <MadridReturnMap />
+          <SevilleMap />
         </div>
 
         <div className="mb-8 bg-white dark:bg-zinc-900 rounded-lg shadow-lg p-6 border border-zinc-200 dark:border-zinc-800">
           <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
-            Transportation Bookings
+            Transportation Booking
           </h2>
           <div className="space-y-4">
             <div className="p-4 bg-zinc-50 dark:bg-zinc-800 rounded-lg">
               <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 mb-2">
-                1. Ferry: Tangier → Spain (Strait of Gibraltar) EARLY MORNING!
+                Bullet Train: Seville → Madrid
               </h3>
+              <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-2">
+                Book high-speed train online (Renfe or Omio) - approximately 2.5 hours
+              </p>
               <a
-                href="https://www.omio.com/app/search-frontend/results/EFFA4029D2B5D4332B99851062730D976/ferry?locale=en&_gl=1*oqz9wv*_up*MQ..*_gs*MQ..&gbraid=0AAAAAoKnniwhrjHtT5BVb7vJB9XtZtmQE&gclid=Cj0KCQiA0p7KBhCkARIsAE6Xlal7jqoBzSnaEnrAW3fd3cn2_Y2sMJVXX7vbf_kcrVewrOgFJSatdikaAhBtEALw_wcB&def_sort=s&easy=1"
+                href="https://www.omio.com/trains/seville/madrid"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors shadow-md hover:shadow-lg"
@@ -34,32 +39,8 @@ export default function Jan13() {
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
                 </svg>
-                Book Ferry on Omio
+                Book Train on Omio
               </a>
-            </div>
-            <div className="p-4 bg-zinc-50 dark:bg-zinc-800 rounded-lg">
-              <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 mb-2">
-                2. Bus: Tarifa → Seville
-              </h3>
-              <a
-                href="https://www.omio.com/buses/tarifa/seville"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-lg transition-colors shadow-md hover:shadow-lg"
-              >
-                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                </svg>
-                Book Bus on Omio
-              </a>
-            </div>
-            <div className="p-4 bg-zinc-50 dark:bg-zinc-800 rounded-lg">
-              <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 mb-2">
-                3. Train: Seville → Madrid
-              </h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-2">
-                Book train online (Renfe or Omio)
-              </p>
             </div>
           </div>
         </div>
@@ -115,32 +96,33 @@ export default function Jan13() {
           </h2>
           <div className="space-y-4 text-zinc-700 dark:text-zinc-300">
             <div className="space-y-2">
-              <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Morning</h3>
+              <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Morning & Afternoon</h3>
               <ul className="list-disc list-inside space-y-1 ml-4">
-                <li>Ferry across <strong>Strait of Gibraltar</strong> from <strong>Tangier</strong> to <strong>Spain</strong></li>
-              </ul>
-            </div>
-            <div className="space-y-2 pt-4 border-t border-zinc-200 dark:border-zinc-800">
-              <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Afternoon</h3>
-              <ul className="list-disc list-inside space-y-1 ml-4">
-                <li>Bus from <strong>Tarifa</strong> to <strong>Seville</strong></li>
+                <li>Final day exploring <strong>Seville</strong></li>
+                <li>Visit any remaining sites or enjoy more of the city</li>
               </ul>
             </div>
             <div className="space-y-2 pt-4 border-t border-zinc-200 dark:border-zinc-800">
               <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Evening</h3>
               <ul className="list-disc list-inside space-y-1 ml-4">
-                <li>Train from <strong>Seville</strong> to <strong>Madrid</strong></li>
-                <li>Sleep in <strong>Madrid</strong> (1 night)</li>
+                <li>Take <strong>bullet train</strong> from <strong>Seville</strong> to <strong>Madrid</strong></li>
+                <li>Arrive in <strong>Madrid</strong> and check into hostel</li>
+                <li>Prepare for departure the next day</li>
               </ul>
             </div>
           </div>
         </div>
 
+        <div className="mt-8 mb-8">
+          <UploadButton day="jan-13" />
+          <PhotoGallery day="jan-13" />
+        </div>
+
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="relative w-full h-[400px] rounded-lg overflow-hidden shadow-lg border border-zinc-200 dark:border-zinc-800">
             <Image
-              src="/jan-13/gibraltar-ferry.jpg"
-              alt="Strait of Gibraltar ferry"
+              src="/jan-13/madrid-night.avif"
+              alt="Seville, Spain"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"

@@ -1,5 +1,7 @@
-import ChefchaouenMap from '../components/ChefchaouenMapWrapper';
+import SevilleMap from '../components/SevilleMapWrapper';
 import Image from 'next/image';
+import PhotoGallery from '../components/PhotoGallery';
+import UploadButton from '../components/UploadButton';
 
 export default function Jan11() {
   return (
@@ -9,56 +11,11 @@ export default function Jan11() {
           January 11
         </h1>
         <p className="text-zinc-600 dark:text-zinc-400 mb-8">
-          Day 10 of your Morocco trip - Fes to Chefchaouen (Blue City)
+          Day 10 of your trip - Seville Activities
         </p>
         
         <div className="mb-8">
-          <ChefchaouenMap />
-        </div>
-
-        <div className="mb-8 bg-white dark:bg-zinc-900 rounded-lg shadow-lg p-6 border border-zinc-200 dark:border-zinc-800">
-          <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
-            Hostel Booking - Chefchaouen
-          </h2>
-          <div className="space-y-4">
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 p-4 bg-zinc-50 dark:bg-zinc-800 rounded-lg">
-              <div>
-                <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-1">Location</p>
-                <p className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
-                  Chefchaouen, Morocco
-                </p>
-              </div>
-              <div>
-                <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-1">Check-in</p>
-                <p className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
-                  January 11, 2026
-                </p>
-              </div>
-              <div>
-                <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-1">Check-out</p>
-                <p className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
-                  January 12, 2026
-                </p>
-              </div>
-              <div>
-                <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-1">Guests</p>
-                <p className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
-                  5 Guests
-                </p>
-              </div>
-            </div>
-            <a
-              href="https://www.hostelworld.com/pwa/s?q=Chefchaouen,%20Morocco&country=Chefchaouen&city=Chefchaouen&type=city&id=9602&from=2026-01-11&to=2026-01-12&guests=5&page=1"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-colors shadow-md hover:shadow-lg"
-            >
-              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-              </svg>
-              Book Hostel on Hostelworld
-            </a>
-          </div>
+          <SevilleMap />
         </div>
 
         <div className="bg-white dark:bg-zinc-900 rounded-lg shadow-lg p-6 border border-zinc-200 dark:border-zinc-800">
@@ -69,25 +26,32 @@ export default function Jan11() {
             <div className="space-y-2">
               <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Day</h3>
               <ul className="list-disc list-inside space-y-1 ml-4">
-                <li><strong>Fes → Chefchaouen</strong> (4 hr bus ride)</li>
-                <li>Travel to <strong>Chefchaouen</strong> for the blue city</li>
+                <li>Explore <strong>Seville Cathedral</strong> and <strong>Giralda Tower</strong></li>
+                <li>Visit the <strong>Alcázar of Seville</strong> - stunning royal palace</li>
+                <li>Wander through <strong>Barrio Santa Cruz</strong> - historic Jewish quarter</li>
+                <li>Visit <strong>Plaza de España</strong></li>
               </ul>
             </div>
             <div className="space-y-2 pt-4 border-t border-zinc-200 dark:border-zinc-800">
-              <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Evening</h3>
+              <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Evening & Night</h3>
               <ul className="list-disc list-inside space-y-1 ml-4">
-                <li><strong>Sunset viewpoint hike</strong> above town</li>
-                <li>Chill evening - more beautiful than "wild," but it's a must-see</li>
+                <li>Enjoy <strong>tapas</strong> and <strong>flamenco</strong> shows</li>
+                <li>Experience Seville's vibrant nightlife</li>
               </ul>
             </div>
           </div>
         </div>
 
+        <div className="mt-8 mb-8">
+          <UploadButton day="jan-11" />
+          <PhotoGallery day="jan-11" />
+        </div>
+
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="relative w-full h-[400px] rounded-lg overflow-hidden shadow-lg border border-zinc-200 dark:border-zinc-800">
             <Image
-              src="/jan-11/chefchaouen.jpg"
-              alt="Chefchaouen, Blue City, Morocco"
+              src="/jan-13/madrid-night.avif"
+              alt="Seville, Spain"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -95,8 +59,8 @@ export default function Jan11() {
           </div>
           <div className="relative w-full h-[400px] rounded-lg overflow-hidden shadow-lg border border-zinc-200 dark:border-zinc-800">
             <Image
-              src="/jan-11/chefchaouen-night.jpg"
-              alt="Chefchaouen at night, Morocco"
+              src="/jan-13/gibraltar-ferry.jpg"
+              alt="Seville architecture, Spain"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"

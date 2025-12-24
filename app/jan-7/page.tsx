@@ -1,5 +1,7 @@
-import MerzougaMap from '../components/MerzougaMapWrapper';
+import TangierMap from '../components/TangierMapWrapper';
 import Image from 'next/image';
+import PhotoGallery from '../components/PhotoGallery';
+import UploadButton from '../components/UploadButton';
 
 export default function Jan7() {
   return (
@@ -9,56 +11,23 @@ export default function Jan7() {
           January 7
         </h1>
         <p className="text-zinc-600 dark:text-zinc-400 mb-8">
-          Day 6 of your Morocco trip - Ouarzazate to Merzouga
+          Day 6 of your Morocco trip - Merzouga to Tangier (LONG DRIVE)
         </p>
         
         <div className="mb-8">
-          <MerzougaMap />
+          <TangierMap />
         </div>
 
         <div className="mb-8 bg-white dark:bg-zinc-900 rounded-lg shadow-lg p-6 border border-zinc-200 dark:border-zinc-800">
           <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
-            Car Rental - Ouarzazate to Fez
-          </h2>
-          <div className="space-y-4">
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 p-4 bg-zinc-50 dark:bg-zinc-800 rounded-lg">
-              <div>
-                <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-1">Pick-up</p>
-                <p className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
-                  Ouarzazate, Jan 7, 10:30 AM
-                </p>
-              </div>
-              <div>
-                <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-1">Drop-off</p>
-                <p className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
-                  Fez, Jan 9, 10:30 AM
-                </p>
-              </div>
-            </div>
-            <a
-              href="https://www.expedia.com/carsearch?date1=1%2F7%2F2026&date2=1%2F9%2F2026&time1=1030AM&time2=1030AM&dpln=6030956&locn=Ouarzazate%2C%20Morocco%20%28OZZ%29&loc2=Fes%2C%20Morocco%20%28FEZ-Saiss%29&drid1=6024399&olat=30.934918&olon=-6.908684&dlat=&dlon=&pickupCode=OZZ&dropCode=FEZ&rfrr=page.TravelGuides.Cars.City&aarpcr=on&useRewards=&selCC=%5B%22van%22%5D&selPageIndex=0"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors shadow-md hover:shadow-lg"
-            >
-              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-              </svg>
-              Book Rental Car on Expedia
-            </a>
-          </div>
-        </div>
-
-        <div className="mb-8 bg-white dark:bg-zinc-900 rounded-lg shadow-lg p-6 border border-zinc-200 dark:border-zinc-800">
-          <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
-            Hostel/Camping - Merzouga
+            Hostel Booking - Tangier
           </h2>
           <div className="space-y-4">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 p-4 bg-zinc-50 dark:bg-zinc-800 rounded-lg">
               <div>
                 <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-1">Location</p>
                 <p className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
-                  Merzouga, Morocco
+                  Tangier, Morocco
                 </p>
               </div>
               <div>
@@ -70,7 +39,7 @@ export default function Jan7() {
               <div>
                 <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-1">Check-out</p>
                 <p className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
-                  January 9, 2026
+                  January 10, 2026
                 </p>
               </div>
               <div>
@@ -81,7 +50,7 @@ export default function Jan7() {
               </div>
             </div>
             <a
-              href="https://www.hostelworld.com/pwa/s?q=Merzouga,%20Morocco&country=Merzouga&city=Merzouga&type=city&id=6011&from=2026-01-07&to=2026-01-09&guests=5&page=1"
+              href="https://www.hostelworld.com/pwa/s?q=Tangier,%20Morocco&country=Tangier&city=Tangier&type=city&id=5205&from=2026-01-07&to=2026-01-10&guests=5&page=1"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-colors shadow-md hover:shadow-lg"
@@ -89,7 +58,7 @@ export default function Jan7() {
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
               </svg>
-              Book Hostel/Camping on Hostelworld
+              Book Hostel on Hostelworld
             </a>
           </div>
         </div>
@@ -100,33 +69,25 @@ export default function Jan7() {
           </h2>
           <div className="space-y-4 text-zinc-700 dark:text-zinc-300">
             <div className="space-y-2">
-              <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Morning</h3>
+              <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Day</h3>
               <ul className="list-disc list-inside space-y-1 ml-4">
-                <li>Explore <strong>Ait Benhaddou</strong></li>
-              </ul>
-            </div>
-            <div className="space-y-2 pt-4 border-t border-zinc-200 dark:border-zinc-800">
-              <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Afternoon</h3>
-              <ul className="list-disc list-inside space-y-1 ml-4">
-                <li>Take rental car to <strong>Merzouga</strong> (5 hr drive)</li>
-                <li>Stop at <strong>Dades Valley</strong> for quick hike</li>
-                <li>Stop at <strong>Todra Gorge</strong> for quick hike</li>
-              </ul>
-            </div>
-            <div className="space-y-2 pt-4 border-t border-zinc-200 dark:border-zinc-800">
-              <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Evening</h3>
-              <ul className="list-disc list-inside space-y-1 ml-4">
-                <li>Camp in the sand or get hostel in <strong>Merzouga</strong></li>
+                <li><strong>LONG DRIVE</strong> from <strong>Merzouga</strong> to <strong>Tangier</strong></li>
+                <li>Arrive in <strong>Tangier</strong> in the evening</li>
               </ul>
             </div>
           </div>
         </div>
 
+        <div className="mt-8 mb-8">
+          <UploadButton day="jan-7" />
+          <PhotoGallery day="jan-7" />
+        </div>
+
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="relative w-full h-[400px] rounded-lg overflow-hidden shadow-lg border border-zinc-200 dark:border-zinc-800">
             <Image
-              src="/jan-7/ait_benhaddou.webp"
-              alt="Ait Benhaddou, Morocco"
+              src="/jan-12/tangier.webp"
+              alt="Tangier, Morocco"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -134,8 +95,8 @@ export default function Jan7() {
           </div>
           <div className="relative w-full h-[400px] rounded-lg overflow-hidden shadow-lg border border-zinc-200 dark:border-zinc-800">
             <Image
-              src="/jan-7/todra_valley.jpg"
-              alt="Todra Valley, Morocco"
+              src="/jan-12/tangier-street.avif"
+              alt="Tangier streets, Morocco"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"
