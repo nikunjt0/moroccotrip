@@ -24,27 +24,28 @@ export default function Jan3() {
           </h2>
           <div className="space-y-4 text-zinc-700 dark:text-zinc-300">
             <div className="space-y-2">
-              <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Morning</h3>
+              <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Morning & Early Afternoon</h3>
               <ul className="list-disc list-inside space-y-1 ml-4">
-                <li>Wander the souks of the <strong>Medina</strong></li>
+                <li>Go to the <strong>markets</strong> and <strong>souks</strong> in the <strong>medina</strong></li>
               </ul>
             </div>
             <div className="space-y-2 pt-4 border-t border-zinc-200 dark:border-zinc-800">
-              <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Midday</h3>
+              <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Late Afternoon</h3>
               <ul className="list-disc list-inside space-y-1 ml-4">
-                <li><strong>Dar el Bacha</strong> , <strong>Jardins de la Majorelle</strong> , <strong>Bahia Palace & Saadian Tombs</strong></li>
+                <li>Get a <strong>hammam</strong> (massage)</li>
               </ul>
             </div>
             <div className="space-y-2 pt-4 border-t border-zinc-200 dark:border-zinc-800">
-              <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Sunset</h3>
+              <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Sunset & Evening</h3>
               <ul className="list-disc list-inside space-y-1 ml-4">
-                <li>Rooftop tea spot</li>
+                <li>See <strong>Jemaa el-Fnaa</strong> at sunset</li>
+                <li>Nice dinner</li>
               </ul>
             </div>
             <div className="space-y-2 pt-4 border-t border-zinc-200 dark:border-zinc-800">
               <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Night</h3>
               <ul className="list-disc list-inside space-y-1 ml-4">
-                <li>Hit <strong>Gueliz</strong> for bars/clubs</li>
+                <li>Go out for <strong>Saturday night</strong></li>
               </ul>
             </div>
           </div>
@@ -55,26 +56,6 @@ export default function Jan3() {
           <PhotoGallery day="jan-3" />
         </div>
 
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="relative w-full h-[400px] rounded-lg overflow-hidden shadow-lg border border-zinc-200 dark:border-zinc-800">
-            <Image
-              src="/jan-3/medina-marrakesh.jpg"
-              alt="Medina, Marrakesh"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
-          <div className="relative w-full h-[400px] rounded-lg overflow-hidden shadow-lg border border-zinc-200 dark:border-zinc-800">
-            <Image
-              src="/jan-3/medina-carpets.jpg"
-              alt="Medina carpets, Marrakesh"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
-        </div>
       </div>
     </div>
   );

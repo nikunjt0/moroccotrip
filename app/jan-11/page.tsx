@@ -11,7 +11,7 @@ export default function Jan11() {
           January 11
         </h1>
         <p className="text-zinc-600 dark:text-zinc-400 mb-8">
-          Day 10 of your trip - Seville Activities
+          Day 10 of your trip - Full Day and Night in Seville
         </p>
         
         <div className="mb-8">
@@ -30,13 +30,16 @@ export default function Jan11() {
                 <li>Visit the <strong>Alcázar of Seville</strong> - stunning royal palace</li>
                 <li>Wander through <strong>Barrio Santa Cruz</strong> - historic Jewish quarter</li>
                 <li>Visit <strong>Plaza de España</strong></li>
+                <li>Explore <strong>Metropol Parasol</strong> (Las Setas)</li>
+                <li>Visit <strong>Torre del Oro</strong> (Golden Tower)</li>
               </ul>
             </div>
             <div className="space-y-2 pt-4 border-t border-zinc-200 dark:border-zinc-800">
               <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Evening & Night</h3>
               <ul className="list-disc list-inside space-y-1 ml-4">
                 <li>Enjoy <strong>tapas</strong> and <strong>flamenco</strong> shows</li>
-                <li>Experience Seville's vibrant nightlife</li>
+                <li>Experience Seville's vibrant <strong>nightlife</strong></li>
+                <li>Full night out in <strong>Seville</strong></li>
               </ul>
             </div>
           </div>
@@ -47,26 +50,6 @@ export default function Jan11() {
           <PhotoGallery day="jan-11" />
         </div>
 
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="relative w-full h-[400px] rounded-lg overflow-hidden shadow-lg border border-zinc-200 dark:border-zinc-800">
-            <Image
-              src="/jan-13/madrid-night.avif"
-              alt="Seville, Spain"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
-          <div className="relative w-full h-[400px] rounded-lg overflow-hidden shadow-lg border border-zinc-200 dark:border-zinc-800">
-            <Image
-              src="/jan-13/gibraltar-ferry.jpg"
-              alt="Seville architecture, Spain"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
-        </div>
       </div>
     </div>
   );

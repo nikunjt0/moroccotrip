@@ -132,26 +132,6 @@ export default function Jan2() {
           <PhotoGallery day="jan-2" />
         </div>
 
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="relative w-full h-[400px] rounded-lg overflow-hidden shadow-lg border border-zinc-200 dark:border-zinc-800">
-            <Image
-              src="/jan-2/jemaa-square-marrakesh.jpg"
-              alt="Jemaa el-Fnaa Square, Marrakesh"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
-          <div className="relative w-full h-[400px] rounded-lg overflow-hidden shadow-lg border border-zinc-200 dark:border-zinc-800">
-            <Image
-              src="/jan-2/jemaa-el-fnaa-night.jpg"
-              alt="Jemaa el-Fnaa at night, Marrakesh"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
-        </div>
       </div>
     </div>
   );

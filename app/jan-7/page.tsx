@@ -11,11 +11,27 @@ export default function Jan7() {
           January 7
         </h1>
         <p className="text-zinc-600 dark:text-zinc-400 mb-8">
-          Day 6 of your Morocco trip - Merzouga to Tangier (LONG DRIVE)
+          Day 6 of your Morocco trip - Desert Voyage Day 4, then Midnight Coach to Tangier
         </p>
         
         <div className="mb-8">
           <TangierMap />
+        </div>
+
+        <div className="mb-8 bg-white dark:bg-zinc-900 rounded-lg shadow-lg p-6 border border-zinc-200 dark:border-zinc-800">
+          <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
+            Transportation Booking
+          </h2>
+          <div className="space-y-4">
+            <div className="p-4 bg-zinc-50 dark:bg-zinc-800 rounded-lg">
+              <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 mb-2">
+                Midnight Coach: Merzouga → Tangier
+              </h3>
+              <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-2">
+                Book overnight coach/bus from Merzouga to Tangier (departs late evening/midnight)
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="mb-8 bg-white dark:bg-zinc-900 rounded-lg shadow-lg p-6 border border-zinc-200 dark:border-zinc-800">
@@ -33,7 +49,7 @@ export default function Jan7() {
               <div>
                 <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-1">Check-in</p>
                 <p className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
-                  January 7, 2026
+                  January 8, 2026
                 </p>
               </div>
               <div>
@@ -50,7 +66,7 @@ export default function Jan7() {
               </div>
             </div>
             <a
-              href="https://www.hostelworld.com/pwa/s?q=Tangier,%20Morocco&country=Tangier&city=Tangier&type=city&id=5205&from=2026-01-07&to=2026-01-10&guests=5&page=1"
+              href="https://www.hostelworld.com/pwa/s?q=Tangier,%20Morocco&country=Tangier&city=Tangier&type=city&id=5205&from=2026-01-08&to=2026-01-10&guests=5&page=1"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-colors shadow-md hover:shadow-lg"
@@ -71,8 +87,14 @@ export default function Jan7() {
             <div className="space-y-2">
               <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Day</h3>
               <ul className="list-disc list-inside space-y-1 ml-4">
-                <li><strong>LONG DRIVE</strong> from <strong>Merzouga</strong> to <strong>Tangier</strong></li>
-                <li>Arrive in <strong>Tangier</strong> in the evening</li>
+                <li>Final day of <strong>desert voyage</strong> activities</li>
+              </ul>
+            </div>
+            <div className="space-y-2 pt-4 border-t border-zinc-200 dark:border-zinc-800">
+              <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Night</h3>
+              <ul className="list-disc list-inside space-y-1 ml-4">
+                <li>Take <strong>midnight coach</strong> from <strong>Merzouga</strong> to <strong>Tangier</strong></li>
+                <li>Overnight journey to Tangier</li>
               </ul>
             </div>
           </div>
@@ -83,26 +105,6 @@ export default function Jan7() {
           <PhotoGallery day="jan-7" />
         </div>
 
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="relative w-full h-[400px] rounded-lg overflow-hidden shadow-lg border border-zinc-200 dark:border-zinc-800">
-            <Image
-              src="/jan-12/tangier.webp"
-              alt="Tangier, Morocco"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
-          <div className="relative w-full h-[400px] rounded-lg overflow-hidden shadow-lg border border-zinc-200 dark:border-zinc-800">
-            <Image
-              src="/jan-12/tangier-street.avif"
-              alt="Tangier streets, Morocco"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
-        </div>
       </div>
     </div>
   );

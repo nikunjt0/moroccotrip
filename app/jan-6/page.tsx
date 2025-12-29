@@ -48,26 +48,6 @@ export default function Jan6() {
           <PhotoGallery day="jan-6" />
         </div>
 
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="relative w-full h-[400px] rounded-lg overflow-hidden shadow-lg border border-zinc-200 dark:border-zinc-800">
-            <Image
-              src="/jan-8/merzouga.jpg"
-              alt="Merzouga, Morocco"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
-          <div className="relative w-full h-[400px] rounded-lg overflow-hidden shadow-lg border border-zinc-200 dark:border-zinc-800">
-            <Image
-              src="/jan-8/merzouga-night.jpg"
-              alt="Merzouga at night, Morocco"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
-        </div>
       </div>
     </div>
   );

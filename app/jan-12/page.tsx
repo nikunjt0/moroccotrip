@@ -11,7 +11,7 @@ export default function Jan12() {
           January 12
         </h1>
         <p className="text-zinc-600 dark:text-zinc-400 mb-8">
-          Day 11 of your trip - Seville Activities (Wild Card Day)
+          Day 11 of your trip - Full Day and Night in Seville
         </p>
         
         <div className="mb-8">
@@ -27,17 +27,17 @@ export default function Jan12() {
               <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Day</h3>
               <ul className="list-disc list-inside space-y-1 ml-4">
                 <li>Continue exploring <strong>Seville</strong></li>
-                <li>Visit <strong>Metropol Parasol</strong> (Las Setas) - modern wooden structure</li>
                 <li>Explore <strong>Triana</strong> neighborhood - known for ceramics and flamenco</li>
-                <li>Visit <strong>Torre del Oro</strong> (Golden Tower)</li>
-                <li><strong>Wild card day</strong> - option to spend extra day elsewhere if desired</li>
+                <li>Visit any sites missed yesterday</li>
+                <li>More time to soak in the city's atmosphere</li>
               </ul>
             </div>
             <div className="space-y-2 pt-4 border-t border-zinc-200 dark:border-zinc-800">
               <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Evening & Night</h3>
               <ul className="list-disc list-inside space-y-1 ml-4">
                 <li>More <strong>tapas</strong> and local cuisine</li>
-                <li>Enjoy Seville's nightlife</li>
+                <li>Enjoy Seville's vibrant <strong>nightlife</strong></li>
+                <li>Full night out in <strong>Seville</strong></li>
               </ul>
             </div>
           </div>
@@ -48,26 +48,6 @@ export default function Jan12() {
           <PhotoGallery day="jan-12" />
         </div>
 
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="relative w-full h-[400px] rounded-lg overflow-hidden shadow-lg border border-zinc-200 dark:border-zinc-800">
-            <Image
-              src="/jan-13/madrid-night.avif"
-              alt="Seville, Spain"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
-          <div className="relative w-full h-[400px] rounded-lg overflow-hidden shadow-lg border border-zinc-200 dark:border-zinc-800">
-            <Image
-              src="/jan-13/gibraltar-ferry.jpg"
-              alt="Seville architecture, Spain"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
-        </div>
       </div>
     </div>
   );
